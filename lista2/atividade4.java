@@ -11,12 +11,8 @@ public class atividade4 {
         for (int count =0; count < 10; count++) {
             System.out.print("Digite o numero " + count + ": ");
             int num2 = sc.nextInt();
-            if (num2 <= num) {
-                num = num;
-            } else {
-                if (num2 > num) {
-                    num = num2;     
-                }
+            if (num2 > num) {
+                num = num2;
             }
         }
         System.out.println("Maior numero digitado: " + num);
