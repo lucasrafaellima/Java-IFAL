@@ -13,7 +13,7 @@ public class atividade6 {
     }
 
     public double media(double a, double b, double c, double d) {
-        media = (a + b + c + d);
+        double media = (a + b + c + d);
         return media;
     }
 
