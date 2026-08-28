@@ -29,4 +29,12 @@ public class cliente {
         this.cpf = cpf;
     }
 
+    public contaPoupanca getContaPoupanca() {
+        return contaPoupanca;
+    }
+
+    public contaCorrente getContaCorrente() {
+        return contaCorrente;
+    }
+
 }

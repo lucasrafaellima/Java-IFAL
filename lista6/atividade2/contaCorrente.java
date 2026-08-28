@@ -6,6 +6,7 @@ public class contaCorrente extends conta {
         super(numConta, taxa, saldo, banco);
     }
     
+    @Override
     public void atualizar() {
         setSaldo(getSaldo() - getTaxa());
     }    

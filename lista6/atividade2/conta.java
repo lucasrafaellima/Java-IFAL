@@ -13,6 +13,28 @@ public class conta {
         this.banco = banco;
     }
 
+    public void depositar(double valor) {
+        if (valor > 0) {
+            this.saldo += valor;
+            System.out.println("Saldo atual: " + this.saldo);
+        } else {
+            System.out.println("Valor inválido!");
+        }
+    }
+
+    public void sacar(double valor) {
+        if (valor > 0 && this.saldo >= valor) {
+            this.saldo -= valor;
+            System.out.println("Saldo atual: " + this.saldo);
+        } else {
+            System.out.println("Valor inválido!");
+        }
+    }
+
+    public void atualizar() {
+
+    }
+
     public int getNumConta() {
         return this.numConta;
     }
