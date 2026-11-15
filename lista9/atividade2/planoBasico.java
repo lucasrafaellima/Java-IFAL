@@ -1,0 +1,20 @@
+package lista9.atividade2;
+
+public class planoBasico extends planoAcademia {
+    public planoBasico(int codigo, String nomeCliente, int idade, double valorBase, int periodoContrato) {
+        super(codigo, nomeCliente, idade, valorBase, periodoContrato);
+    }
+
+    @Override
+    public double calcularMensalidade() {
+        double mensalidade = 0;
+
+        if (super.getPeriodoContrato() < 6) {
+            mensalidade = super.getValorBase() + (super.getValorBase() * 0.05);
+        } else if (super.getPeriodoContrato() > 6) {
+            mensalidade = super.getValorBase() + (super.getValorBase() * 0.10);
+        } 
+
+        return mensalidade;
+    }
+}
